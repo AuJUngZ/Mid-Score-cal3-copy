@@ -1,1 +1,6 @@
-[{"name":"สอบกลางภาค","full_score":"35","got_score":"30.63"},{"name":"สอบปลายภาค","full_score":"100","got_score":"100"},{"name":"สอบย่อย","full_score":"10","got_score":"10"},{"name":"EZ","full_score":"10","got_score":"10"}]
+[
+  { "name": "สอบกลางภาค", "full_score": "35", "got_score": "30.63" },
+  { "name": "สอบปลายภาค", "full_score": "100", "got_score": "100" },
+  { "name": "สอบย่อย", "full_score": "10", "got_score": "10" },
+  { "name": "EZ", "full_score": "10", "got_score": "10" }
+]
