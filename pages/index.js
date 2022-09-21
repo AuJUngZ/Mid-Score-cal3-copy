@@ -23,8 +23,10 @@ export default function Home() {
             <div className="alert alert-success text-center">
               เลือกรายวิชา :{" "}
               <select className="form-select">
-                <option selected>เลือกรายวิชา</option>
-                <option value="1">วิชาเลือก 1</option>
+                <option selected value={"0"}>
+                  เลือกรายวิชา
+                </option>
+                <option value={"1"}>วิชาเลือก 1</option>
               </select>
             </div>
           </div>

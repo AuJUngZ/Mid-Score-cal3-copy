@@ -10,7 +10,7 @@ export default function ShowTable() {
   }, []);
 
   const callGet = async () => {
-    const resp = await axios.get("https://cal3score.vercel.app/api/score");
+    const resp = await axios.get("http://localhost:3000/api/score");
     setData(resp.data.score);
   };
   return (
@@ -61,7 +61,7 @@ export default function ShowTable() {
           </tr> */}
           {/* footer of table */}
           <tr className="text-start">
-            <td colspan="9">
+            <td colSpan="9">
               <strong>หมายเหตุจากอาจารย์ผู้สอน (206261)</strong>
               <br />
               สามารถดูข้อสอบได้ โดยการส่งข้อความหาอาจารย์ narawadee
