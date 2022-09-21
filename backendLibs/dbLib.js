@@ -1,16 +1,19 @@
 import fs from "fs";
+import path from "path";
 
 export function readDB() {
-  const fs = require("fs");
-  const srt = fs.readFileSync("./db/allscore.json", "utf-8");
-  const todolist = JSON.parse(srt);
+  const str = fs.readFileSync(
+    path.join(process.cwd(), "db", "allscore.json"),
+    "utf-8"
+  );
+  const todolist = JSON.parse(str);
   return todolist;
 }
 
 export function writeDB(score) {
-  const fs = require("fs");
-  const srt = JSON.stringify(score);
-  fs.writeFileSync("./db/allscore.json", srt, "utf-8");
+  const str = JSON.stringify(score);
+  const file = path.join(process.cwd(), "db", "allscore");
+  fs.writeFileSync(file, str, "utf-8");
 }
 
 export function delDB(id) {}
