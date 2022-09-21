@@ -10,7 +10,9 @@ export default function ShowTable() {
   }, []);
 
   const callGet = async () => {
-    const resp = await axios.get("http://localhost/api/score");
+    const resp = await axios.get(
+      "https://mid-score-cal3-copy.vercel.app/api/score"
+    );
     setData(resp.data.score);
   };
   return (
